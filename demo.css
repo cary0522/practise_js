@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #FFE4CA;
+}
+
+.banner {
+    height: 100%;
+    text-align: center;
+    padding: 5px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+.resume{
+    border: 1px black dotted;
+    margin: 10px;
+}
+
+.resume h2{
+    text-align: center;
+}
+
+.resume p{
+    text-align: left;
+}
+
+.photos{
+    height: 300px;
+    width: 200px;
+    border: 1px black dotted;
+    margin: 10px;
+}
+
+.talk_flex {
+    display: flex;
+    justify-content: center;
+}
+
+.talk h3,h5{
+    padding: 10px;
+}
+
+.talk h3{
+    text-align: center;
+}
+
+tr,td{
+    padding:2px;
+    background-color:bisque;
+}
+
+.point:hover{
+    background-color:#FFAF60;
+}
