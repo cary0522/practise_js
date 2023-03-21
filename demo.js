@@ -160,6 +160,37 @@ function many_star(n){
     }document.write(star);
     document.write("<br/>");
 }
-many_star(6);
+many_star(0);
 
  
+
+function makeStars (n){
+    var starArr = [];
+    var star = "";
+    for (var i=0 ; i<n ; i++){
+        star = star + "*";
+        starArr.push(star);
+    }return starArr.join("//n");
+}
+document.write(makeStars(0));
+
+
+
+function star(i){
+    var result = "";
+    for (var j = 1 ; j <= i ; j++){
+        result = result + "*";
+    }return result;
+    // 先設定一個製造＊的函式，且Ｊ可以製造出多層的效果
+}
+function stars(n){
+    for(var i=1 ; i<=n ; i++){
+        document.write(star(i));
+    }
+    // 定義i，並控制要跑幾次製造＊的函式
+    for(var i = n-1 ; i >0 ; i--){
+        document.write(star(i));
+    }
+    // 製造遞減的＊
+}
+stars(3);
