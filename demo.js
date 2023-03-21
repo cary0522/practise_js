@@ -136,3 +136,30 @@ function stars(n){
 }
 
 star(4);
+
+function two_Sum(arr){
+    
+    for (var i=0 ; i<arr.length ; i++){
+        var one = 5-arr[i];
+        for (var j=i+1 ; j < arr.length ; j++){
+            if( arr[j] == one){
+                return ([i,j]);
+            }
+        }
+        }
+    }
+document.write(two_Sum([2,3,4,5]));
+
+
+function many_star(n){
+    var star = "";
+    for (var i = 0; i < n ; i++){
+        for (var j=0 ; j <=i ; j++){
+            star = star + "*";
+        }
+    }document.write(star);
+    document.write("<br/>");
+}
+many_star(6);
+
+ 
