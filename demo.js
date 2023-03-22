@@ -196,15 +196,59 @@ function stars(n){
 stars(0);
 
 function makeStar(n){
-    var arr=[];
+    var arr=["x",];
     var star="";
     for(var i = 1 ; i<=n ; i++){
         star = star + "*";
         arr.push(star);
     }  
-    for(var i=n-1;i>0;i--){
-        arr.push(arr[i-1]);
-    }
+    // for(var i=n-1;i>0;i--){
+    //     arr.push(arr[i-1]);
+    // }
     document.write(arr.join("</br>"));
 }
-makeStar(3);
+makeStar(2);
+
+
+// function table(n){
+//     for(var i=1 ; i<=9 ; i++){
+//         document.write(n + "*" + i + "=" + n*i );
+//         document.write("</br>");
+//     }
+// }
+// table(3);
+
+// function nice(){
+//     for(var i = 1 ; i <= 9 ; i++){
+//         for(var j = 1; j<= 9 ; j++){
+//             document.write(i + "*" + j + "=" + i*j);
+//             document.write("</br>");
+//         }
+//     }
+// }
+// nice();
+
+
+function fib(n){
+    if(n===0){
+        return 0;
+    }
+    else if (n===1){
+        return 1;
+    }
+    else{
+        return fib(n-1)+fib(n-2);
+    }
+}
+document.write(fib(8));
+
+function fib(n){
+    var fibArr = [0,1];
+    for(var i=2 ; i <=n ; i++){
+    fibArr[i]=fibArr[i-1]+fibArr[i-2];
+    fibArr.push(fibArr[i]);
+    }
+    return fibArr[n];
+}
+
+document.write(fib(5));
