@@ -172,7 +172,7 @@ function makeStars (n){
         starArr.push(star);
     }return starArr.join("//n");
 }
-document.write(makeStars(0));
+makeStars(2);
 
 
 
@@ -193,4 +193,18 @@ function stars(n){
     }
     // 製造遞減的＊
 }
-stars(3);
+stars(0);
+
+function makeStar(n){
+    var arr=[];
+    var star="";
+    for(var i = 1 ; i<=n ; i++){
+        star = star + "*";
+        arr.push(star);
+    }  
+    for(var i=n-1;i>0;i--){
+        arr.push(arr[i-1]);
+    }
+    document.write(arr.join("</br>"));
+}
+makeStar(3);
