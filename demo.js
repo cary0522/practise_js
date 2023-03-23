@@ -252,3 +252,24 @@ function fib(n){
 }
 
 document.write(fib(5));
+
+function mini(str){
+    var one = "" ;
+    for (var i=str.length-1 ; i >=0 ; i--){
+        one = one + str[i];
+    }    
+    return one;
+}
+console.log(mini("asdfgb"));
+
+function miniArr(arr){
+    var min = arr[0];
+    for (var i = 1 ; i < arr.length ; i++){
+        // 假定陣列中第一個數最小，若後續有比較到更小的，替換最小的數值
+        if(min > arr[i]){
+            min = arr[i];
+        }
+    }
+    return min;
+}
+console.log(miniArr([11,22,3,1,5,6,7]));
