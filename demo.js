@@ -273,3 +273,37 @@ function miniArr(arr){
     return min;
 }
 console.log(miniArr([11,22,3,1,5,6,7]));
+
+var arr = [4,63,7,8,94,41];
+var newArr = arr.sort();
+// (function(a,b){
+//     return a-b;
+// });
+
+console.log(newArr);
+
+function findMy(arr , n){
+    var newArr = arr.sort(function(a,b){
+        return a-b;
+    });
+    return arr , newArr[n-1];
+}
+
+console.log(findMy([3,6,82,35,7,37,9,5],2));
+
+function hey(str){
+    var manyNumber = "";
+    for(var i = 0 ; i < str.length ; i++){
+        if(str[i] >= "A" && str[i] <= "Z"){
+            manyNumber += str[i].toLowerCase();
+        }else if (str[i] >= "a" && str[i] <= "z"){
+            manyNumber += str[i].toUpperCase();
+        }else{
+            manyNumber += str[i];
+        }
+    }
+    return manyNumber;
+}
+
+console.log(hey("AAAAbcde"));
+
